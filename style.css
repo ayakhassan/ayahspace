@@ -1,0 +1,266 @@
+/* ===== Color Palette ===== */
+:root {
+  --baby-pink: #ffd6e7;
+  --brown: #8b4513;
+  --matcha-green: #a8d8b9;
+}
+
+/* ===== General Styles ===== */
+body {
+  font-family: 'Tangerine';
+  /* background: var(--baby-pink); Soft baby pink */
+  margin: 0;
+  padding: 10px;
+  text-align: left;
+  /* New background image */
+  background-image: url('assets/images/diary-cover.jpg');/* Update path to your image */
+  background-size: cover; /* Fills the entire screen */
+  background-position: center; /* Centers the image */
+  /* Fallback background color (use your baby pink) */
+  /* background-color: var(--baby-pink); */
+}
+* Semi-transparent sections */
+.profile-container, .diary-cover, .main-content section {
+  background: rgba(255, 255, 255, 0.85);
+  padding: 15px;
+  border-radius: 8px;
+  margin: 10px 0;
+}
+/* ===== Sidebar ===== */
+.sidebar {
+  width: 200px;
+  background-color: var(--brown); /* Warm brown */
+  padding: 15px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+}
+
+.sidebar img.profile-pic {
+  width: 150px;
+  height: 150px;
+  border: 3px solid var(--matcha-green); /* Matcha green border */
+  margin: 10px 0;
+}
+
+.sidebar h1 {
+  font-size: 28px;
+  color: var(--baby-pink); /* Baby pink text */
+  margin: 10px 0;
+}
+
+.sidebar ul li a {
+  color: var(--matcha-green); /* Matcha green links */
+}
+
+.sidebar ul li a:hover {
+  color: var(--baby-pink); /* Baby pink on hover */
+}
+
+/* ===== Main Content ===== */
+.main-content {
+  margin-left: 200px;
+  padding: 15px;
+  color: var(--brown); /* Brown text for readability */
+}
+
+/* ===== Profile Sections ===== */
+.profile-container {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 15px;
+  margin: 10px 0;
+  border: 2px dashed var(--matcha-green); /* Matcha green border */
+}
+
+.profile-container h1 {
+  color: var(--brown); /* Brown headings */
+}
+
+/* ===== Buttons ===== */
+button {
+  background: var(--matcha-green); /* Matcha green buttons */
+  color: var(--brown); /* Brown text */
+}
+
+button:hover {
+  background: var(--brown); /* Brown on hover */
+  color: var(--baby-pink);
+}
+
+/* ===== Music Player ===== */
+#music-player {
+  background: var(--matcha-green); /* Matcha green background */
+  border: 2px solid var(--brown); /* Brown border */
+}
+
+#play-pause-btn {
+  background: var(--brown); /* Brown button */
+  color: var(--baby-pink);
+}
+
+#progress-bar::-webkit-slider-thumb {
+  background: var(--brown); /* Brown slider thumb */
+}
+
+/* ===== Diary Cover ===== */
+.diary-cover {
+  background: rgba(255, 214, 231, 0.9); /* Semi-transparent baby pink */
+  border: 2px solid var(--matcha-green);
+}
+
+.diary-cover h1 {
+  color: var(--brown); /* Brown title */
+}
+/* Questions Page Styles */
+.questions-container {
+  background: rgba(255, 214, 231, 0.9); /* Baby pink with transparency */
+  padding: 30px;
+  margin: 20px;
+  border-radius: 15px;
+  border: 2px solid #8b4513; /* Brown border */
+}
+
+.question {
+  margin: 20px 0;
+}
+
+.question h2 {
+  font-size: 28px;
+  color: #311807; /* Brown text */
+  margin-bottom: 10px;
+}
+
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #a8d8b9; /* Matcha green border */
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.nav-buttons {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.nav-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #a8d8b9; /* Matcha green */
+  color: #8b4513; /* Brown text */
+  border-radius: 5px;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.nav-btn:hover {
+  background: #8b4513; /* Brown */
+  color: #ffd6e7; /* Baby pink text */
+}
+/* Stylish text link instead of a button */
+.questions-link {
+  font-family: 'Tangerine';
+  font-size: 32px; /* Larger, cute text */
+  color: #8b4513; /* Brown color */
+  text-decoration: none;
+  border-bottom: 2px dotted #a8d8b9; /* Matcha green underline */
+  transition: color 0.3s ease;
+}
+
+.questions-link:hover {
+  color: #ff1a8c; /* Bright pink on hover */
+  border-bottom-color: #ff1a8c;
+}
+/* ===== Write-In Page Layout ===== */
+.applications-page {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 30px;
+  background: #fffdf6; /* Vintage paper color */
+  box-shadow: 0 0 10px rgba(139, 69, 19, 0.1);
+  min-height: 100vh;
+}
+
+.write-in-area {
+  background-image: repeating-linear-gradient(
+    #f3f3f3 0px,
+    #f3f3f3 23px,
+    transparent 23px,
+    transparent 24px
+  ); /* Subtle lined paper effect */
+  line-height: 24px; /* Matches guide lines */
+  font-size: 0.9em; /* Adjustable base size */
+  font-family: 'Courier New', monospace;
+  color: var(--brown);
+  padding: 40px 50px;
+  margin: 20px 0;
+}
+
+.write-line {
+  display: block;
+  min-height: 24px;
+  margin-bottom: 2px;
+}
+
+/* For printed version */
+@media print {
+  .applications-page {
+    background: white;
+    box-shadow: none;
+    padding: 0;
+  }
+  
+  .write-in-area {
+    background-image: repeating-linear-gradient(
+      #ccc 0px,
+      #ccc 23px,
+      transparent 23px,
+      transparent 24px
+    );
+  }
+}
+/* Font Classes */
+.dancing-font {
+  font-family: 'Dancing Script', cursive;
+  font-size: 2rem;
+  color: var(--brown);
+}
+
+.caveat-font {
+  font-family: 'Caveat', cursive;
+  font-size: 1.4rem;
+  line-height: 1.8;
+  color: var(--brown);
+}
+
+/* Improved Layout */
+.question-group {
+  margin: 2rem 0;
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 8px;
+}
+
+.question-header {
+  border-bottom: 2px dashed var(--matcha-green);
+  padding-bottom: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.answer-text p {
+  margin: 0;
+  padding: 0 1.5rem;
+}
+
+.text-nav {
+  margin-top: 3rem;
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.nav-link {
+  margin: 0 2rem;
+  text-decoration: none;
+  font-size: 1.6rem;
+}

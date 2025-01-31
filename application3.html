@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Applications - Page 3</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      background: url('assets/images/diary-cover.jpg') no-repeat center center fixed;
+      background-size: cover;
+      font-family: Arial, sans-serif;
+    }
+
+    .applications-page {
+      padding: 20px;
+      background: rgba(255, 255, 255, 0.8);
+      border-radius: 12px;
+      max-width: 800px;
+      margin: 50px auto;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    .write-in-area {
+      margin-top: 20px;
+    }
+
+    .question-header {
+      margin: 20px 0;
+    }
+
+    .question-header h3 {
+      font-size: 1.2rem;
+      margin-bottom: 5px;
+    }
+
+    .writing-space {
+      margin-bottom: 15px;
+      padding: 10px;
+      background-color: #f9f9f9;
+      border-radius: 8px;
+    }
+
+    .write-line {
+      margin: 5px 0;
+    }
+
+    .audio-container {
+      margin: 20px 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    audio {
+      width: 100%;
+      max-width: 600px;
+    }
+
+    /* Pink navigation bar styling for the audio */
+    audio::-webkit-media-controls-panel {
+      background-color: pink;
+      border-radius: 8px;
+    }
+
+    audio::-webkit-media-controls-play-button,
+    audio::-webkit-media-controls-timeline,
+    audio::-webkit-media-controls-current-time-display,
+    audio::-webkit-media-controls-time-remaining-display {
+      color: black;
+    }
+
+    .nav-buttons {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+    }
+
+    .nav-btn {
+      background-color: #333;
+      color: #fff;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    .nav-btn:hover {
+      background-color: #555;
+    }
+  </style>
+</head>
+<body>
+  <div class="applications-page">
+    <h1></h1>
+    <div class="write-in-area">
+      <!-- Question 8 -->
+      <div class="question-header">
+        <h3>8. If a song played every time you entered a room, what would it be?</h3>
+      </div>
+      <div class="writing-space">
+        <div class="write-line">If a song entered every time I walked in, it would be “Oncle Jazz” by Men I Trust. It quite literally was every morning on the way to school because I was so obsessed.</div>
+      </div>
+
+      <!-- Music player -->
+      <div class="audio-container">
+        <audio controls autoplay>
+          <source src="assets/music/oncle-jazz.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+
+      <!-- Question 9 -->
+      <div class="question-header">
+        <h3>9. If money and time were no object, what would you do with your life?</h3>
+      </div>
+      <div class="writing-space">
+        <div class="write-line">Like the narrator in The Fig Tree by Sylvia Plath, I often find myself overwhelmed by the countless possibilities life offers. There are so many paths I want to explore—learning every language, mastering every skill, traveling the world, becoming a professional chef, pursuing a law degree, and reading every book. The thought of not being able to live out every version of my life is something I struggle to accept, as it feels like there’s just so much to experience, and I don’t want to miss any of it.</div>
+      </div>
+
+      <!-- Question 10 -->
+      <div class="question-header">
+        <h3>10. If you were a city, which one would you be and why?</h3>
+      </div>
+      <div class="writing-space">
+        <div class="write-line">It’s insane to think about Sudan, Texas, because for a long time, when I’d tell people where I was from, they’d just nod and smile. Even though I’m from the country of Sudan, I often felt more like I was from Sudan, Texas. Growing up, I didn’t always feel at home in a room full of Sudanese people. My Arabic vocabulary and knowledge of Sudanese dishes often felt scrutinized, which left me questioning whether I was truly from Al Fao, Sudan, or if my identity was more rooted in Lamb County, Sudan, Texas. (I claim Sudan the country btw (˵¯͒⌄¯͒˵)).</div>
+      </div>
+    </div>
+
+    <!-- Navigation Buttons -->
+    <div class="nav-buttons">
+      <a href="application2.html" class="nav-btn">Back</a>
+      <a href="index.html" class="nav-btn">Back to Profile</a>
+    </div>
+  </div>
+</body>
+</html>

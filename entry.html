@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diary Cover</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    
+  <div class="diary-cover">
+    <h1>Ayah's Space˚ʚ♡ɞ˚</h1>
+    <p>Enter the password to unlock:</p>
+    <input type="password" id="passwordInput" placeholder="🔒 Enter password">
+    <button onclick="checkPassword()">Unlock</button>
+    <p id="errorMessage" style="color: red; display: none;">Try Again Girly!</p>
+  </div>
+
+  <script>
+    function checkPassword() {
+      const password = "heydarlin"; // Set your password here
+      const input = document.getElementById("passwordInput").value;
+      const errorMessage = document.getElementById("errorMessage");
+
+      if (input === password) {
+        window.location.href = "index.html"; // Redirect to the main profile page
+      } else {
+        errorMessage.style.display = "block"; // Show error message
+      }
+    }
+    </script>
+  
+</body>
+</html>
+
