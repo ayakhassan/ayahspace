@@ -2,21 +2,13 @@
 <html lang="en">
 <head>
   <script>
-    // Function to get a cookie by name
-    function getCookie(name) {
-      let match = document.cookie.match(new RegExp('(^| )' + name + '=([^;]+)'));
-      return match ? match[2] : null;
-    }
-  
-    // Check if the "visited" cookie exists
-    if (!getCookie('visited')) {
-      // Set a "visited" cookie if it doesn't exist
-      document.cookie = "visited=true; max-age=" + 60*60*24*365;  // cookie lasts for 1 year
-      // Redirect to the entry page
-      window.location.href = "entry.html";
+    // Check if the "hasVisited" item exists in localStorage
+    if (!localStorage.getItem('hasVisited')) {
+      // If it doesn't exist, set it and redirect to entry.html
+      localStorage.setItem('hasVisited', 'true');
+      window.location.href = "entry.html"; // Redirect to entry page
     }
   </script>
-    
   
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
